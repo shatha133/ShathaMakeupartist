@@ -1,0 +1,150 @@
+
+*{
+    font-size:1.3rem;
+    text-align: center;
+    font-family: 'El Messiri', sans-serif;
+
+}
+
+body{
+    background: linear-gradient(335deg, rgba(255,140,107,1) 0%, rgb(122, 104, 65) 100%);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.container{
+    margin: 1rem 4rem;
+    display:flex;
+    flex-direction: column;
+    gap:1.3rem;
+    justify-content:center;
+}
+
+.logo{
+  
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo img{
+    max-width: 50vw;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 9px 8px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.message{
+
+    position:fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    max-width: 70vw;
+    min-height: 70vh;
+    background: linear-gradient(335deg, rgb(138, 43, 226) 0%, rgb(56, 6, 102) 100%);
+    text-align: center;
+    margin: 2rem auto;
+    z-index: 99;
+    border-radius: 11px 101px 11px 110px;
+}
+
+.displayNone {
+    display:none;
+}
+
+.displayShow{
+    display: block;
+    animation: all 5s ease-in-out;
+}
+
+.message h3{
+    color: white;
+  text-shadow: 2px 2px 4px #da0b0b;
+}
+
+.message article{
+    font-size:0.7em;
+    color: white;
+  text-shadow: 2px 2px 4px #1b1818;
+}
+
+.message .locationBtn{
+    position: absolute;
+
+    bottom: 0.4rem;
+    color: white;
+    text-decoration: none;
+
+
+    right: 0.4rem;
+    cursor: pointer;
+    background: linear-gradient(335deg, rgb(21, 148, 31) 0%, rgb(2, 129, 44) 100%);
+padding: 0.3rem 0.3rem;
+border-radius: 0.5rem;
+
+    
+}
+
+	
+
+
+
+
+.whoami{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+
+.whoami h1 {
+    font-weight: 700;
+    text-shadow: 1px 1px 2px pink;
+
+}
+
+.conn-container {
+    display:flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    gap: 3rem;
+    margin-bottom: 1rem;
+}
+
+.conn-container .info {
+    max-width: 2rem;
+    height: auto;
+    animation: all 5s ease-in-out ;
+}
+
+.conn-container .info:hover{
+transform: scale(1.2);
+
+}
+
+@media (min-width: 913px) {
+    .logo img {
+        height: 50vh;
+    }
+    }
+
+    @media (max-width: 335px){
+        .message{
+            border-radius: 1rem;
+            font-size: 1rem;
+            overflow-x: hidden;
+            overflow-y:  scroll;
+        }
+        .message .locationBtn{
+            position: fixed;
+            bottom: 2.4000000000000004rem;
+        }
+    }
